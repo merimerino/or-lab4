@@ -1,0 +1,124 @@
+doctype html
+head
+  title Licensed Horses Cro
+  meta(charset='UTF-8')
+  meta(name='description' content='Baza podataka licenciranih konja u Republici Hrvatskoj, po Hrvatskom konjičkom savezu.')
+  meta(name='keywords' content='HTML, CSS, JavaScript')
+  meta(name='author' content='Marija Danek')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(href='https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css' rel='stylesheet')
+  link(rel='stylesheet' href='style.css')
+link#bootstrap-css(href='//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' rel='stylesheet')
+script(src='//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js')
+script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+// ---- Include the above in your HEAD tag --------
+head
+  title Navbar
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(href='https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700,800i' rel='stylesheet')
+nav.navbar.navbar-expand-sm.navbar-light.bg-light
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarTogglerDemo03' aria-controls='navbarTogglerDemo03' aria-expanded='false' aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarTogglerDemo03.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto.mt-2.mt-lg-0
+      li.nav-item
+        a.nav-link(href='/') Početna
+      li.nav-item
+        a.nav-link(href='/datatable') Tablica
+      if getuser
+          li.nav-item
+            a.nav-link(href='data/horses.json' download) Osvježi JSON
+          li.nav-item
+            a.nav-link(href='data/horses.csv' download) Osvježi CSV
+          li.nav-item
+            a.nav-link(href='/profile') Profil
+          li.nav-item 
+            a.nav-link(href='/logout') Odjava
+            
+      else
+          li.nav-item
+            a.nav-link(href='/sign-up') Prijava/Registracija
+      
+      li.nav-item
+.margins
+  h3#baza-podataka-licensed-horses-cro
+    | Baza podataka - Licensed horses CRO
+    h3#verzija-1-0
+      | Verzija 1.0
+      h3#autor-marija-danek Autor: Marija Danek
+      h4#_jezik-hrvatski_
+        em Jezik: Hrvatski
+      h4#_licenca-mit-kod-se-mo-e-slobodno-koristiti_
+        em Licenca: MIT - kod se mo&zcaron;e slobodno koristiti
+      p
+        | Baza podataka licenciranih konja u Republici Hrvatskoj, po Hrvatskom konji&ccaron;kom savezu.
+      h4#tablica-atributa- Tablica atributa:
+      table.meta-table
+        thead
+          tr
+            th Naziv
+            th Tip
+            th Opis
+        tbody
+          tr
+            td id_horse
+            td integer
+            td ID konja
+          tr
+            td horse_name
+            td string
+            td Ime konja
+          tr
+            td father
+            td string
+            td Otac konja
+          tr
+            td mothers_father
+            td string
+            td Otac majke konja
+          tr
+            td year_of_birth
+            td integer
+            td Godina ro&dstrok;enja
+          tr
+            td country_of_birth
+            td string
+            td Zemlja ro&dstrok;enja
+          tr
+            td gender
+            td string
+            td Spol
+          tr
+            td breed
+            td string
+            td Pasmina
+          tr
+            td tournament
+            td boolean
+            td
+              | Bio na natjecanju? 
+              em True
+              |  ako da, 
+              em false
+              |  ako ne
+          tr
+            td owner_name
+            td string
+            td Ime vlasnika
+          tr
+            td owner_surname
+            td string
+            td Prezime vlasnika
+          tr
+            td id_owner
+            td string
+            td ID vlasnika
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js')
+script(src='https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js')
+script(src='https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js')
+script(src='https://unpkg.com/bootstrap-table@1.17.1/dist/extensions/export/bootstrap-table-export.min.js')

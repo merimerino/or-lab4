@@ -1,0 +1,122 @@
+[
+  {
+    "id_horse": 2327,
+    "horse_name": "CORADO G",
+    "father": "Corrado II",
+    "mothers_father": "Capo",
+    "year_of_birth": 2010,
+    "country_of_birth": "CRO",
+    "gender": "Pastuh",
+    "breed": "Hrvatski športski konj",
+    "tournament": true,
+    "owner": {
+      "owner_name": "Evo",
+      "owner_surname": "Parmezan"
+    }
+  },
+  {
+    "id_horse": 3852,
+    "horse_name": "COREO",
+    "father": "Carpaccio 1",
+    "mothers_father": "Armano",
+    "year_of_birth": 2016,
+    "country_of_birth": "CRO",
+    "gender": "Kastrat",
+    "breed": "Hrvatski športski konj",
+    "tournament": false,
+    "owner": {
+      "owner_name": "Stjepan",
+      "owner_surname": "Goričanec"
+    }
+  },
+  {
+    "id_horse": 4002,
+    "horse_name": "CORIOLO",
+    "father": "Carpaccio 1",
+    "mothers_father": "Quido",
+    "year_of_birth": 2016,
+    "country_of_birth": "CRO",
+    "gender": "Pastuh",
+    "breed": "Hrvatski športski konj",
+    "tournament": true,
+    "owner": {
+      "owner_name": "Marinko",
+      "owner_surname": "Lisjak"
+    }
+  },
+  {
+    "id_horse": 4415,
+    "horse_name": "CORMINO",
+    "father": "Cornetino",
+    "mothers_father": "Cormint",
+    "year_of_birth": 2018,
+    "country_of_birth": "N/A",
+    "gender": "Kastrat",
+    "breed": "Holstein",
+    "tournament": true,
+    "owner": {
+      "owner_name": "Thomas",
+      "owner_surname": "Gnadl"
+    }
+  },
+  {
+    "id_horse": 1397,
+    "horse_name": "CORNER BOY",
+    "father": "Careno",
+    "mothers_father": "Cavalir",
+    "year_of_birth": 2005,
+    "country_of_birth": "CRO",
+    "gender": "Pastuh",
+    "breed": "Hrvatski športski konj",
+    "tournament": true,
+    "owner": {
+      "owner_name": "Josip",
+      "owner_surname": "Gugić"
+    }
+  },
+  {
+    "id_horse": 4399,
+    "horse_name": "CORNET S QUAPRICE",
+    "father": "Cornet Obolensky",
+    "mothers_father": "Quaprice Bois Margot",
+    "year_of_birth": 2016,
+    "country_of_birth": "BEL",
+    "gender": "Pastuh",
+    "breed": "Zangersheide",
+    "tournament": true,
+    "owner": {
+      "owner_name": "Sven",
+      "owner_surname": "Volz"
+    }
+  },
+  {
+    "id_horse": 3576,
+    "horse_name": "CONTRADA R",
+    "father": "Cro Cop",
+    "mothers_father": "Couleur Rubin",
+    "year_of_birth": 2013,
+    "country_of_birth": "CRO",
+    "gender": "Kobila",
+    "breed": "AES",
+    "tournament": true,
+    "owner": {
+      "owner_name": "Filip",
+      "owner_surname": "Novoprezimić"
+    }
+  },
+  {
+    "id_horse": 3096,
+    "horse_name": "CONTRADOR R",
+    "father": "Cro Cop",
+    "mothers_father": "Concord",
+    "year_of_birth": 2013,
+    "country_of_birth": "CRO",
+    "gender": "Pastuh",
+    "breed": "Anglo saxon",
+    "tournament": false,
+    "owner": {
+      "owner_name": "Filip",
+      "owner_surname": "Novoprezimić"
+    }
+  }
+]

@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "https://github.com/merimerino/or-lab2/blob/master/schema.json",
+  "type": "array",
+  "title": "Licensed horses CRO",
+  "description": "Popis licenciranih konja u Hrvatskoj",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "id_horse": {
+          "type": "integer",
+          "title": "id_horse",
+          "description": "ID konja"
+        },
+        "horse_name": {
+          "type": "string",
+          "title": "horse_name",
+          "description": "Ime konja"
+        },
+        "father": {
+          "type": "string",
+          "title": "father",
+          "description": "Ime oca"
+        },
+        "mothers_father": {
+          "type": "string",
+          "title": "mothers_father",
+          "description": "Ime majčina oca"
+        },
+        "year_of_birth": {
+          "type": "integer",
+          "title": "year_of_birth",
+          "description": "Godina rođenja konja"
+        },
+        "country_of_birth": {
+          "type": "string",
+          "title": "country_of_birth",
+          "description": "Zemlja rođenja konja"
+        },
+        "gender": {
+          "type": "string",
+          "title": "gender",
+          "description": "Spol konja"
+        },
+        "breed": {
+          "type": "string",
+          "title": "breed",
+          "description": "Pasmina konja"
+        },
+        "tournament": {
+          "type": "boolean",
+          "title": "tournament",
+          "description": "Je li konj ikad bio na turniru?"
+        },
+        "owner": {
+          "type": "object",
+          "properties": {
+            "owner_name": {
+              "type": "string",
+              "title": "owner_name",
+              "description": "Ime vlasnika"
+            },
+            "owner_surname": {
+              "type": "string",
+              "title": "owner_surname",
+              "description": "Prezime vlasnika"
+            }
+          },
+          "required": ["owner_name", "owner_surname"]
+        }
+      },
+      "required": [
+        "id_horse",
+        "horse_name",
+        "father",
+        "mothers_father",
+        "year_of_birth",
+        "country_of_birth",
+        "gender",
+        "breed",
+        "tournament",
+        "owner"
+      ]
+    }
+  ]
+}

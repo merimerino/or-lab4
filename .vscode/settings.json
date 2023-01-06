@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "/subscriptions/ba60d223-b919-4738-ac8a-e86ebe8454ac/appservices/subscriptions/ba60d223-b919-4738-ac8a-e86ebe8454ac/resourceGroups/web2-results-and-schedule-resourcegroup/providers/Microsoft.Web/sites/web2-results-and-schedule",
+  "appService.deploySubpath": "."
+}

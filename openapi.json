@@ -1,0 +1,409 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Licensed Horses API",
+    "description": "API for Licensed Horses in Croatia",
+    "contact": {
+      "email": "marija.danek@fer.hr"
+    },
+    "license": {
+      "name": "MIT",
+      "url": "https://github.com/merimerino/or-lab2/blob/master/LICENSE"
+    },
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://virtserver.swaggerhub.com/MD51773_1/Horses/1.0.0",
+      "description": "SwaggerHub API Auto Mocking"
+    }
+  ],
+  "paths": {
+    "/horses": {
+      "get": {
+        "tags": ["Horses"],
+        "operationId": "getAllHorses",
+        "responses": {
+          "200": {
+            "description": "ok",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Horses"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found. Invalid query."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        },
+        "x-swagger-router-controller": "Horses"
+      }
+    },
+    "/horses/{id}": {
+      "get": {
+        "tags": ["Horses"],
+        "operationId": "getHorse",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Fetched requested horse.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Horses"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found. Invalid query."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        },
+        "x-swagger-router-controller": "Horses"
+      },
+      "delete": {
+        "tags": ["Horses"],
+        "operationId": "deleteHorse",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Deleted requested horse.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Horses"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found. Invalid query."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        },
+        "x-swagger-router-controller": "Horses"
+      }
+    },
+    "/owners": {
+      "get": {
+        "tags": ["Owners"],
+        "operationId": "getAllOwners",
+        "responses": {
+          "200": {
+            "description": "ok",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Owners"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found. Invalid query."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        },
+        "x-swagger-router-controller": "Owners"
+      },
+      "post": {
+        "tags": ["Owners"],
+        "operationId": "addOwner",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Owners"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Added requested owner.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Owners"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found. Invalid query."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        },
+        "x-swagger-router-controller": "Owners"
+      }
+    },
+    "/owners/{id}": {
+      "get": {
+        "tags": ["Owners"],
+        "operationId": "getOwner",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Fetched requested owner.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Owners"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found. Invalid query."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        },
+        "x-swagger-router-controller": "Owners"
+      },
+      "put": {
+        "tags": ["Owners"],
+        "operationId": "updateOwner",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Owners"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Updated requested owner.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Owners"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found. Invalid query."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        },
+        "x-swagger-router-controller": "Owners"
+      }
+    },
+    "/owners-horses/{id}": {
+      "get": {
+        "tags": ["Owners Horses"],
+        "operationId": "gerOwnersHorses",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Fetched all horses from one owner.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Owners"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found. Invalid query."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        },
+        "x-swagger-router-controller": "Owners"
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Horses": {
+        "required": [
+          "breed",
+          "country_of_birth",
+          "father",
+          "gender",
+          "horse_name",
+          "id_horse",
+          "mothers_father",
+          "owner",
+          "tournament",
+          "year_of_birth"
+        ],
+        "type": "object",
+        "@context": {
+          "gender": "https://schema.org/gender",
+          "owner": "https://schema.org/Person"
+        },
+        "properties": {
+          "id_horse": {
+            "title": "id_horse",
+            "type": "integer",
+            "description": "ID konja"
+          },
+          "horse_name": {
+            "title": "horse_name",
+            "type": "string",
+            "description": "Ime konja"
+          },
+          "father": {
+            "title": "father",
+            "type": "string",
+            "description": "Ime oca"
+          },
+          "mothers_father": {
+            "title": "mothers_father",
+            "type": "string",
+            "description": "Ime majčina oca"
+          },
+          "year_of_birth": {
+            "title": "year_of_birth",
+            "type": "integer",
+            "description": "Godina rođenja konja"
+          },
+          "country_of_birth": {
+            "title": "country_of_birth",
+            "type": "string",
+            "description": "Zemlja rođenja konja"
+          },
+          "gender": {
+            "title": "gender",
+            "type": "string",
+            "description": "Spol konja"
+          },
+          "breed": {
+            "title": "breed",
+            "type": "string",
+            "description": "Pasmina konja"
+          },
+          "tournament": {
+            "title": "tournament",
+            "type": "boolean",
+            "description": "Je li konj ikad bio na turniru?"
+          },
+          "owner": {
+            "$ref": "#/components/schemas/Horses_owner"
+          }
+        }
+      },
+      "Owners": {
+        "required": ["owner_name", "owner_surname"],
+        "type": "object",
+        "@context": {
+          "owner_name": "https://schema.org/givenName",
+          "owner_surname": "https://schema.org/familyName"
+        },
+        "properties": {
+          "owner_name": {
+            "title": "owner_name",
+            "type": "string",
+            "description": "Ime vlasnika"
+          },
+          "owner_surname": {
+            "title": "owner_surname",
+            "type": "string",
+            "description": "Prezime vlasnika"
+          }
+        }
+      },
+      "Horses_owner": {
+        "required": ["owner_name", "owner_surname"],
+        "type": "object",
+        "properties": {
+          "owner_name": {
+            "title": "owner_name",
+            "type": "string",
+            "description": "Ime vlasnika"
+          },
+          "owner_surname": {
+            "title": "owner_surname",
+            "type": "string",
+            "description": "Prezime vlasnika"
+          }
+        }
+      }
+    }
+  }
+}

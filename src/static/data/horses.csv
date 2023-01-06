@@ -1,0 +1,9 @@
+id_horse,horse_name,father,mothers_father,year_of_birth,country_of_birth,gender,breed,tournament,id_owner,owner_name,owner_surname
+2327,CORADO G,Corrado II,Capo,2010,CRO,Pastuh,Hrvatski športski konj,true,235,Evo,Parmezan
+3852,COREO,Carpaccio 1,Armano,2016,CRO,Kastrat,Hrvatski športski konj,false,341,Stjepan,Goričanec
+4002,CORIOLO,Carpaccio 1,Quido,2016,CRO,Pastuh,Hrvatski športski konj,true,466,Marinko,Lisjak
+4415,CORMINO,Cornetino,Cormint,2018,N/A,Kastrat,Holstein,true,837,Thomas,Gnadl
+1397,CORNER BOY,Careno,Cavalir,2005,CRO,Pastuh,Hrvatski športski konj,true,567,Josip,Gugić
+4399,CORNET S QUAPRICE,Cornet Obolensky,Quaprice Bois Margot,2016,BEL,Pastuh,Zangersheide,true,125,Sven,Volz
+3576,CONTRADA R,Cro Cop,Couleur Rubin,2013,CRO,Kobila,AES,true,647,Filip,Novoprezimić
+3096,CONTRADOR R,Cro Cop,Concord,2013,CRO,Pastuh,Anglo saxon,false,647,Filip,Novoprezimić
